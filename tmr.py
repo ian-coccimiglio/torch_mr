@@ -27,6 +27,8 @@ class TorchMemoryReport:
     }
     GB_conversion = 1 << 30
 
+    torch.cuda.memory._record_memory_history()
+
     @classmethod
     def ascii_bar(cls, current, capacity):
         total_cubes = 24
@@ -84,5 +86,6 @@ class TorchMemoryReport:
     def clear_torch_cache():
         torch.cuda.empty_cache()
 
-
-TorchMemoryReport.print_all()
+    @staticmethod
+    def save_snapshot(filename):
+        torch.cuda.memory._dump_snapshot(f"{filename}.pickle")
