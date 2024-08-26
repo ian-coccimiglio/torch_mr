@@ -1,5 +1,5 @@
 # torch\_mr
-NVIDIA GPU Memory Reporting for PyTorch in IPython
+PyTorch Memory Reporting with NVIDIA GPU in IPython
 
 This tool is built for visually profiling the GPU usage from PyTorch.
 
