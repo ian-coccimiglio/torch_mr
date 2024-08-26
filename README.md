@@ -3,7 +3,7 @@ NVIDIA GPU Memory Reporting for PyTorch in IPython
 
 This tool is built for visually profiling the GPU usage from PyTorch.
 
-[](images/VRAM_monitoring.png)
+![](images/VRAM_monitoring.png)
 
 # Installation
 Clone the repo and install the module using pip install -e .
